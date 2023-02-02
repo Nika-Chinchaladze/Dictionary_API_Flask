@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(5, 5, 5);
+    color: white;
+    font-family: "Kanit";
+}
+/* NAVIGATION BAR SECTION */
+.navigationDiv {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    padding: 1% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bookIcon {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.controlDiv div {
+    margin: 0 15px;
+}
+
+/* DROP DOWN MENU IN NAVIGATION BAR */
+.dropbtn {
+    background-color: #F7EFE5;
+    color: black;
+    width: 180px;
+    font-size: 20px;
+    padding: 5px 0;
+    border-style: none;
+    border-radius: 10px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F7EFE5;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content button {
+    color: black;
+    width: 150px;
+    padding: 5px 20px;
+    text-decoration: none;
+    display: block;
+    border: none;
+}
+
+.dropdown-content button:hover {
+    background-color: #cdc1d4;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #674188;
+    color: #F7EFE5;
+}
+
+/* VERTICAL DIV SECTION  */
+.verticalDiv {
+    width: 2px;
+    height: 30px;
+    border: none;
+    border-left: 3px solid #674188;
+}
+
+/* TOOGLE BUTTON SECTION  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #674188;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: grey;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px grey;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+.moonIcon {
+    font-size: 25px;
+}
+
+/* SEARCH BAR SECTION */
+.searchDiv {
+    width: 100%;
+    padding: 1% 10%;
+}
+.searchInput {
+    box-sizing: border-box;
+    width: 90%;
+    height: 70px;
+    padding: 0 20px;
+    background-color: #F7EFE5;
+    color: black;
+    border: none;
+    outline: none;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 18px;
+}
+.searchInput:focus {
+    border: none;
+    outline: none;
+}
+.searchButton {
+    box-sizing: border-box;
+    width: 10%;
+    height: 70px;
+    padding: 0;
+    background-color: #F7EFE5;
+    color: #674188;
+    border: none;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.searchIcon {
+    font-size: 25px;
+    font-weight: bold;
+}
+/* ANSWER SECTION  */
+.answerDiv {
+    width: 100%;
+    padding: 1% 10%;
+    margin-top: 30px;
+}
+.playButton {
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #cdc1d4;
+    border: 1px solid #674188;
+}
+.playButton:active {
+    position: relative;
+    top: 2px;
+}
+.playIcon {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #674188;
+}
+h6 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10%;
+    color: #674188;
+    font-size: 18px;
+}
+/* NOUN DIV SECTION */
+.wordDiv {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1% 10%;
+    margin-top: 30px;
+}
+hr {
+    border: none;
+    border-top: 3px solid grey;
+}
+h3, h5 {
+    font-family: "Paprika";
+}
+h3 {
+    font-weight: bold;
+}
+h5 {
+    color: rgb(92, 91, 91);
+    font-size: 16px;
+}
+span {
+    font-weight: bold;
+    color: #674188;
+}
+.listDiv {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    padding-left: 30px;
+}
+.example {
+    color: rgb(90, 90, 90);
+}
+
+
+/* MEDIA QUERY FOR IPAD */
+@media screen and (max-width: 1024px) {
+    .playButton {
+        width: 60px;
+        height: 60px;
+    }
+    .playIcon {
+        font-size: 2.5rem;
+    }
+}
+
+/* MEDIA QUERY FOR PHONE */
+@media screen and (max-width: 576px) {
+    .navigationDiv {
+        text-align: center;
+        flex-direction: column;
+    }
+    .dropbtn {
+        width: 120px;
+        font-size: 14px;
+    }
+    .controlDiv div {
+        margin: 0 13px;
+    }
+}
